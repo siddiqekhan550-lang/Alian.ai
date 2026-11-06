@@ -1,0 +1,6 @@
+{
+  "name": "Alien.ai - AI Image & Video Generator",
+  "description": "Alien.ai is a next-generation AI image and video creation platform inspired by Google Flow, featuring OpenAI image generation, Runway video generation, persistent history, and credit management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

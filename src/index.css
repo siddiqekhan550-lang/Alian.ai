@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #07060D;
+    --bg-alt: #100D1C;
+    --card-bg: #14111F;
+    --purple-primary: #7C5CFF;
+    --purple-glow: #B05CFF;
+    --mint-accent: #22E6A8;
+    --text-main: #F4F2FB;
+    --text-muted: #A29CB8;
+    --border-subtle: rgba(255, 255, 255, 0.09);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom glow and backdrop effects */
+.alien-glow {
+  box-shadow: 0 0 30px -5px rgba(124, 92, 255, 0.35);
+}
+
+.alien-glow-mint {
+  box-shadow: 0 0 30px -5px rgba(34, 230, 168, 0.3);
+}
+
+.alien-glow-card {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+}
+
+.border-subtle {
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+/* Custom scrollbars for clean studio feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(7, 6, 13, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 92, 255, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 92, 255, 0.6);
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}

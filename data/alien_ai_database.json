@@ -1,0 +1,153 @@
+{
+  "users": [
+    {
+      "id": "admin-user-01",
+      "username": "AlienAdmin",
+      "email": "admin@alien.ai",
+      "password_hash": "06a8df99960394973861b10e695811b393b05a3c025e365c74883b2bf48eeefd",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "role": "admin",
+      "created_at": "2026-11-06T17:15:14.031Z"
+    },
+    {
+      "id": "usr_276fc6e2-89b",
+      "username": "TestCreator",
+      "email": "tester_1793985314032@alien.ai",
+      "password_hash": "455f1e0d27c9d1e88e9bf118a330a1dc9a53257591bd82bf120c702e84797001",
+      "avatar_url": "https://api.dicebear.com/7.x/bottts-neutral/svg?seed=TestCreator",
+      "role": "user",
+      "created_at": "2026-11-06T17:15:14.033Z"
+    },
+    {
+      "id": "usr_a2e5c7c8-9c1",
+      "username": "OtherUser",
+      "email": "other_1793985314035@alien.ai",
+      "password_hash": "455f1e0d27c9d1e88e9bf118a330a1dc9a53257591bd82bf120c702e84797001",
+      "avatar_url": "https://api.dicebear.com/7.x/bottts-neutral/svg?seed=OtherUser",
+      "role": "user",
+      "created_at": "2026-11-06T17:15:14.035Z"
+    }
+  ],
+  "credits": {
+    "admin-user-01": 500,
+    "usr_276fc6e2-89b": 22,
+    "usr_a2e5c7c8-9c1": 50
+  },
+  "transactions": [
+    {
+      "id": "tx_3143131e-12a",
+      "user_id": "usr_a2e5c7c8-9c1",
+      "type": "welcome_bonus",
+      "amount": 50,
+      "balance_after": 50,
+      "description": "Welcome Bonus: 50 Free Credits on First Signup",
+      "created_at": "2026-11-06T17:15:14.035Z"
+    },
+    {
+      "id": "tx_57bca138-1d1",
+      "user_id": "usr_276fc6e2-89b",
+      "type": "refund",
+      "amount": 10,
+      "balance_after": 22,
+      "description": "Refund: Test simulated failed generation refund",
+      "created_at": "2026-11-06T17:15:14.035Z"
+    },
+    {
+      "id": "tx_793b5d4e-de5",
+      "user_id": "usr_276fc6e2-89b",
+      "type": "generation_deduction",
+      "amount": -15,
+      "balance_after": 12,
+      "description": "Test 10s video generation",
+      "created_at": "2026-11-06T17:15:14.034Z"
+    },
+    {
+      "id": "tx_d49124f5-bd8",
+      "user_id": "usr_276fc6e2-89b",
+      "type": "generation_deduction",
+      "amount": -10,
+      "balance_after": 27,
+      "description": "Test 8s video generation",
+      "created_at": "2026-11-06T17:15:14.034Z"
+    },
+    {
+      "id": "tx_e5bbfc71-cc8",
+      "user_id": "usr_276fc6e2-89b",
+      "type": "generation_deduction",
+      "amount": -8,
+      "balance_after": 37,
+      "description": "Test 5s video generation",
+      "created_at": "2026-11-06T17:15:14.034Z"
+    },
+    {
+      "id": "tx_85b17a2d-7f8",
+      "user_id": "usr_276fc6e2-89b",
+      "type": "generation_deduction",
+      "amount": -5,
+      "balance_after": 45,
+      "description": "Test 4s video generation",
+      "created_at": "2026-11-06T17:15:14.034Z"
+    },
+    {
+      "id": "tx_5cd94609-d8d",
+      "user_id": "usr_276fc6e2-89b",
+      "type": "welcome_bonus",
+      "amount": 50,
+      "balance_after": 50,
+      "description": "Welcome Bonus: 50 Free Credits on First Signup",
+      "created_at": "2026-11-06T17:15:14.033Z"
+    },
+    {
+      "id": "tx-admin-initial",
+      "user_id": "admin-user-01",
+      "type": "admin_grant",
+      "amount": 500,
+      "balance_after": 500,
+      "description": "Initial Administrator balance grant",
+      "created_at": "2026-11-06T17:15:14.031Z"
+    }
+  ],
+  "generations": [
+    {
+      "user_id": "usr_276fc6e2-89b",
+      "type": "image",
+      "prompt": "Private Image for User 1",
+      "aspect_ratio": "1:1",
+      "status": "completed",
+      "provider": "gemini",
+      "credits_charged": 5,
+      "id": "gen_7ee0cef9-936",
+      "progress": 100,
+      "created_at": "2026-11-06T17:15:14.036Z"
+    },
+    {
+      "id": "featured-dragon-01",
+      "user_id": "system",
+      "type": "video",
+      "prompt": "Scene 1 · The sleepy dragon awakening in an enchanted bioluminescent nebula forest, cinematic 8k lighting, emerald glow",
+      "duration": 8,
+      "aspect_ratio": "16:9",
+      "status": "completed",
+      "progress": 100,
+      "output_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1280&q=80",
+      "thumbnail_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      "provider": "runway",
+      "provider_task_id": "task-dragon-featured",
+      "credits_charged": 10,
+      "created_at": "2026-11-05T17:15:14.030Z"
+    }
+  ],
+  "uploads": [],
+  "settings": {
+    "image_credit_cost": 5,
+    "video_credit_costs": {
+      "4": 5,
+      "5": 8,
+      "8": 10,
+      "10": 15
+    },
+    "new_user_credits": 50,
+    "active_image_provider": "auto",
+    "active_video_provider": "auto"
+  }
+}
